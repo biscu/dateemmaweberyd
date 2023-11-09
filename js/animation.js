@@ -1,10 +1,5 @@
 console.log("animation file is connected");
 
-function getTitleHeight() {
-  title = document.querySelector(".h-animated");
-  titleHeight = title.offsetHeight;
-  console.log("h1 title is " + titleHeight + " px");
-}
 function getHeroHeight() {
   hero = document.querySelector(".hero-animated");
   heroHeight = hero.offsetHeight;
@@ -401,7 +396,6 @@ function scaleProfile() {
   });
 }
 
-getTitleHeight();
 getHeroHeight();
 
 function start() {
