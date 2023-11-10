@@ -64,9 +64,7 @@
   <body>
     <div class="loader" id="loader">
       <span class="text-light loader-logo">
-        <!-- <span>Ulacon</span> -->
-        <img class="loader-logo" src="assets/loader-logo.svg" />
-        <div class="loader-bar"></div>
+        <img class="loader-logo" src="assets/logo.svg" />
       </span>
     </div>
 
@@ -90,23 +88,44 @@
                   Emma Weberyd will never tell you what she think or feel about
                   you directly, instead she will tell you trough a friend voice.
                 </p>
-                <div class="button secondary">See more</div>
+                <div class="button secondary">
+                  Unlock card
+                  <img class="icon-button" src="assets/lock.svg" />
+                </div>
               </div>
+
+              <dialog data-modal>
+                <div class="modal-inner">
+                  <img class="card-image" src="assets/friends.svg" />
+                  <h1 class="headingL service-title s-animated">
+                    Communication
+                  </h1>
+                  <p class="paragraph">
+                    Emma Weberyd will never tell you what she think or feel
+                    about you directly, instead she will tell you trough a
+                    friend voice.
+                  </p>
+                  <p data-close-modal onclick="dialog.close();">X</p>
+                </div>
+              </dialog>
+
               <div class="service-wrap" style="border-radius: 0px 64px 0px 0px">
                 <img class="card-image" src="assets/confrontation.svg" />
                 <h1 class="headingL service-title s-animated">Confrontation</h1>
                 <p class="paragraph">
-                  When faced with opposite views or opinions, Emma Weberyd shape
-                  her face with an arched pout and endless silence.
+                  How to deal with Emma Weberyd arched pout and endless silence
+                  when faced with opposite opinions.
                 </p>
-                <div class="button secondary">See more</div>
+                <div class="button secondary">
+                  Unlock card
+                  <img class="icon-button" src="assets/lock.svg" />
+                </div>
               </div>
               <div class="service-wrap">
                 <img class="card-image" src="assets/mood.svg" />
                 <h1 class="headingL service-title s-animated">Moods</h1>
                 <p class="paragraph">
-                  In case Emma Weberyd feels sad or in bad mood here some action
-                  points...
+                  What to do in case Emma Weberyd feels sad or in bad mood.
                 </p>
                 <div class="button secondary">
                   Unlock card
@@ -115,12 +134,9 @@
               </div>
               <div class="service-wrap">
                 <img class="card-image" src="assets/lock-doodle.svg" />
-                <h1 class="headingL service-title s-animated">
-                  Unlock all cards
-                </h1>
+                <h1 class="headingL service-title s-animated">Jokes in bed</h1>
                 <p class="paragraph">
-                  Get Emma+ and access unlimited advice, insights and tricks to
-                  smoothen up your datig life with Emma Weberyd.
+                  How to prepare yourself to Emma's humor under the sheet.
                 </p>
                 <div class="button secondary">
                   Unlock card
@@ -139,18 +155,23 @@
         <div id="clientList" class="client-list">
           <div class="client-item2" style="width: 80%">
             <h2 class="headingL">Quality Time · 30%</h2>
+            <img class="language-icon" src="assets/clock.svg" />
           </div>
           <div class="client-item2" style="width: 70%">
             <h2 class="headingL">Act of Service · 27%</h2>
+            <img class="language-icon" src="assets/love.svg" />
           </div>
           <div class="client-item2" style="width: 60%">
             <h2 class="headingL">Pshysical Touch · 18%</h2>
+            <img class="language-icon" src="assets/touch.svg" />
           </div>
           <div class="client-item2" style="width: 50%">
             <h2 class="headingL">Word of affermation · 15%</h2>
+            <img class="language-icon" src="assets/mouth.svg" />
           </div>
           <div class="client-item2" style="width: 30%">
             <h2 class="headingL">Receiving Gifts · 10%</h2>
+            <img class="language-icon" src="assets/gift.svg" />
           </div>
         </div>
       </div>
@@ -158,24 +179,41 @@
 
     <section class="bg-light pb-180 pt-180">
       <div class="container">
-        <div class="lovehate-header">
-          <div class="col">
-            <img style="width: 56px" src="assets/love.svg" />
-            <h2 class="headingXl p-animated">Love</h2>
-            <p class="paragraph p-animated">Her family</p>
-            <p class="paragraph p-animated">Pixars movies</p>
-            <p class="paragraph p-animated">Italian food</p>
-            <p class="paragraph p-animated">One particular Italian guy</p>
-            <p class="paragraph p-animated">Leia</p>
-            <p class="paragraph p-animated">Coffe</p>
-          </div>
-          <div class="col">
-            <img style="width: 56px" src="assets/hate.svg" />
-            <h2 class="headingXl p-animated">Hate</h2>
-            <p class="paragraph p-animated">Formula 1</p>
-            <p class="paragraph p-animated">Food in bed</p>
-            <p class="paragraph p-animated">Recurring jokes</p>
-            <p class="paragraph p-animated">Eating while watching tv</p>
+        <div class="service-block">
+          <div class="service-inner">
+            <div class="service-wrap" style="border-radius: 64px 0px 0px 64px">
+              <img
+                class="card-image"
+                src="assets/emma-love.svg"
+                width="100px"
+              />
+              <h1 class="headingL service-title s-animated">
+                Emma loves: Pixars movie, her family, italian food, one
+                particular italian guy, Leia, coffee, walk in nature.
+              </h1>
+
+              <div class="button secondary">
+                Unlock more
+                <img class="icon-button" src="assets/lock.svg" />
+              </div>
+            </div>
+
+            <div class="service-wrap" style="border-radius: 0px 64px 64px 0px">
+              <img
+                class="card-image"
+                src="assets/emma-hate.svg"
+                width="100px"
+              />
+              <h1 class="headingL service-title s-animated">
+                Emma hates: formula 1, food in bed, recurring joke, face
+                expression involving togue, eating while watching tv.
+              </h1>
+
+              <div class="button secondary">
+                Unlock more
+                <img class="icon-button" src="assets/lock.svg" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -183,11 +221,11 @@
 
     <section class="bg-dark pb-180 pt-180">
       <div class="container">
-        <h2 class="heading-display mb-80 d-animated">
-          I decided to retire from my profession after meeting Emma Weberyd.
-          <br /><br />
-          Sigmund Freud
-        </h2>
+        <h1 class="s-animated heading-display mb-80">
+          "Scientists always says that the universe is complex. Clearly they
+          never met Emma Weberyd."
+        </h1>
+        <p class="paragraph">Davide Biscuso, PhD</p>
       </div>
     </section>
 
@@ -317,39 +355,24 @@
       </div>
     </section> -->
 
-    <section class="section bg-dark">
+    <section class="section bg-light">
       <div class="container">
         <div class="client-header mb-80">
           <h2 class="headingXl p-animated width-50" id="change">
-            We have worked with the finest companies that want to change the
-            world ✦
+            We have interviewed an expert on the subject: PhD Davide Biscuso.
           </h2>
           <p class="paragraph p-animated width-50">
-            The shared commitment to environmental sustainability and the desire
-            to create a better world for current and future generations is at
-            the core of Ulacon mission. Together, we believe we can make a
-            profound and lasting impact on the planet.
+            Davide studied design in Milano but decided to focus his studies on
+            something else after meeting the swedish Emma Weberyd.
+            <br /><br /><br />
+            "Scientists always says that the universe is complex, clearly they
+            never met Emma Weberyd."Davide explains . "But just like the
+            Universe she is as fascinating".
+            <br /><br /><br />
+            I spent years figuring out the complex mechanism that regulates
+            Emma's misterious mind, and today you can learn all of this for the
+            simple price of 9999kr.
           </p>
-        </div>
-        <div id="clientList" class="client-list pb-180">
-          <div class="client-item">
-            <h2 class="headingL">Klarna</h2>
-          </div>
-          <div class="client-item">
-            <h2 class="headingL">Willa</h2>
-          </div>
-          <div class="client-item">
-            <h2 class="headingL">Netlight</h2>
-          </div>
-          <div class="client-item">
-            <h2 class="headingL">Insurely</h2>
-          </div>
-          <div class="client-item">
-            <h2 class="headingL">Infocentric</h2>
-          </div>
-          <div class="client-item">
-            <h2 class="headingL">Swace</h2>
-          </div>
         </div>
       </div>
     </section>

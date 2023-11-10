@@ -413,6 +413,11 @@ function start() {
 
 start();
 
+const dialog = document.querySelector("dialog");
+// dialog.show(); // Opens a non-modal dialog
+// dialog.showModal(); // Opens a modal
+// dialog.close(); // Closes the dialog
+
 //ANIMATION FOR SCRUMBLE TEXT
 
 // const landingText = ["connect", "evolve", "dominate"];
