@@ -117,6 +117,49 @@ body {
   align-items: center;
 }
 
+.status-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  padding: 3rem 0 3rem 0;
+}
+
+.dot {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background-color: var(--gray);
+  border-radius: 50%;
+}
+
+.dot:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0px 0px 2px 2px var(--gray) inset;
+  animation: pulsate 1s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 1;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(0.5, 0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2, 2);
+    opacity: 0;
+  }
+}
+
 .pace .pace-progress {
   z-index: 2000;
   top: 0;
@@ -124,6 +167,10 @@ body {
   -webkit-transform: translate3d(0, 0, 0) !important;
   -ms-transform: translate3d(0, 0, 0) !important;
   transform: translate3d(0, 0, 0) !important;
+}
+
+.m-center {
+  text-align: center;
 }
 
 .pace .pace-progress:after {
@@ -614,6 +661,22 @@ dialog.hide {
   border-radius: 1699999px;
 }
 
+.client-item2:nth-child(1) {
+  width: 80%;
+}
+.client-item2:nth-child(2) {
+  width: 70%;
+}
+.client-item2:nth-child(3) {
+  width: 60%;
+}
+.client-item2:nth-child(4) {
+  width: 50%;
+}
+.client-item2:nth-child(5) {
+  width: 40%;
+}
+
 .version-tag {
   padding: 0.5rem;
   padding-left: 1rem;
@@ -769,20 +832,6 @@ dialog.hide {
 
 .width-50 {
   width: 50%;
-}
-
-.circle {
-  width: 100px;
-  height: 100px;
-  background-color: black;
-  transform-origin: center;
-  position: absolute;
-  border-radius: 9999999999px;
-  z-index: 0;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  overflow-y: hidden;
 }
 
 .image-hero {
@@ -957,12 +1006,11 @@ dialog.hide {
   }
 
   .heading-hero {
-    font-size: 2.5rem !important;
-    width: 100%;
+    font-size: 3rem !important;
   }
 
   .headingXl {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .width-50 {
@@ -1081,5 +1129,21 @@ dialog.hide {
     margin-bottom: -40px;
     color: var(--text-color);
     border-radius: 0px;
+  }
+
+  .client-item2:nth-child(1) {
+    width: 80%;
+  }
+  .client-item2:nth-child(2) {
+    width: 75%;
+  }
+  .client-item2:nth-child(3) {
+    width: 70%;
+  }
+  .client-item2:nth-child(4) {
+    width: 65%;
+  }
+  .client-item2:nth-child(5) {
+    width: 60%;
   }
 }
