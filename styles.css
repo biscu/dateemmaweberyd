@@ -951,7 +951,7 @@ dialog.hide {
     padding-top: 20%;
   }
   .paragraph {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
   .heading-img {
     margin-bottom: 5vw;
@@ -1108,7 +1108,8 @@ dialog.hide {
     flex-direction: column;
   }
   .service-wrap {
-    padding: 1rem;
+    padding: 2rem;
+    gap: 0.5rem;
   }
   .marquee {
     font-size: 2rem !important;
